@@ -1,0 +1,32 @@
+*******************************************
+V2-rayN:
+----------------------------
+vless://3b44ace093045100e0bcf180acddc5bc@icook.hk:443?encryption=none&security=tls&sni=vercel.andmins.tk&type=ws&host=vercel.andmins.tk&path=%2Fargo-vless?ed=2048#Argo-Vless
+----------------------------
+vmess://eyAidiI6ICIyIiwgInBzIjogIkFyZ28tVm1lc3MiLCAiYWRkIjogImljb29rLmhrIiwgInBvcnQiOiAiNDQzIiwgImlkIjogIjNiNDRhY2UwOTMwNDUxMDBlMGJjZjE4MGFjZGRjNWJjIiwgImFpZCI6ICIwIiwgInNjeSI6ICJub25lIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICJ2ZXJjZWwuYW5kbWlucy50ayIsICJwYXRoIjogIi9hcmdvLXZtZXNzP2VkPTIwNDgiLCAidGxzIjogInRscyIsICJzbmkiOiAidmVyY2VsLmFuZG1pbnMudGsiLCAiYWxwbiI6ICIiIH0K
+----------------------------
+trojan://3b44ace093045100e0bcf180acddc5bc@icook.hk:443?security=tls&sni=vercel.andmins.tk&type=ws&host=vercel.andmins.tk&path=%2Fargo-trojan?ed=2048#Argo-Trojan
+----------------------------
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozYjQ0YWNlMDkzMDQ1MTAwZTBiY2YxODBhY2RkYzViY0BpY29vay5oazo0NDMK@icook.hk:443#Argo-Shadowsocks
+由于该软件导出的链接不全，请自行处理如下: 传输协议: WS ， 伪装域名: vercel.andmins.tk ，路径: /argo-shadowsocks?ed=2048 ， 传输层安全: tls ， sni: vercel.andmins.tk
+*******************************************
+小火箭:
+----------------------------
+vless://3b44ace093045100e0bcf180acddc5bc@icook.hk:443?encryption=none&security=tls&type=ws&host=vercel.andmins.tk&path=/argo-vless?ed=2048&sni=vercel.andmins.tk#Argo-Vless
+----------------------------
+vmess://bm9uZTozYjQ0YWNlMDkzMDQ1MTAwZTBiY2YxODBhY2RkYzViY0BpY29vay5oazo0NDMK?remarks=Argo-Vmess&obfsParam=vercel.andmins.tk&path=/argo-vmess?ed=2048&obfs=websocket&tls=1&peer=vercel.andmins.tk&alterId=0
+----------------------------
+trojan://3b44ace093045100e0bcf180acddc5bc@icook.hk:443?peer=vercel.andmins.tk&plugin=obfs-local;obfs=websocket;obfs-host=vercel.andmins.tk;obfs-uri=/argo-trojan?ed=2048#Argo-Trojan
+----------------------------
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozYjQ0YWNlMDkzMDQ1MTAwZTBiY2YxODBhY2RkYzViY0BpY29vay5oazo0NDMK?obfs=wss&obfsParam=vercel.andmins.tk&path=/argo-shadowsocks?ed=2048#Argo-Shadowsocks
+*******************************************
+Clash:
+----------------------------
+- {name: Argo-Vless, type: vless, server: icook.hk, port: 443, uuid: 3b44ace093045100e0bcf180acddc5bc, tls: true, servername: vercel.andmins.tk, skip-cert-verify: false, network: ws, ws-opts: {path: /argo-vless?ed=2048, headers: { Host: vercel.andmins.tk}}, udp: true}
+----------------------------
+- {name: Argo-Vmess, type: vmess, server: icook.hk, port: 443, uuid: 3b44ace093045100e0bcf180acddc5bc, alterId: 0, cipher: none, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /argo-vmess?ed=2048, headers: {Host: vercel.andmins.tk}}, udp: true}
+----------------------------
+- {name: Argo-Trojan, type: trojan, server: icook.hk, port: 443, password: 3b44ace093045100e0bcf180acddc5bc, udp: true, tls: true, sni: vercel.andmins.tk, skip-cert-verify: false, network: ws, ws-opts: { path: /argo-trojan?ed=2048, headers: { Host: vercel.andmins.tk } } }
+----------------------------
+- {name: Argo-Shadowsocks, type: ss, server: icook.hk, port: 443, cipher: chacha20-ietf-poly1305, password: 3b44ace093045100e0bcf180acddc5bc, plugin: v2ray-plugin, plugin-opts: { mode: websocket, host: vercel.andmins.tk, path: /argo-shadowsocks?ed=2048, tls: true, skip-cert-verify: false, mux: false } }
+*******************************************
